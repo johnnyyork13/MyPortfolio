@@ -20,6 +20,7 @@
 }
 .left_column, .right_column {
     margin: 20px;
+    padding: 10px;
 }
 
 .profile_pic {
@@ -27,17 +28,23 @@
     background-color: white;
     width: 90%;
     height: 250px;
+    margin: 15px;
 }
 
-.profile_bio {
+.profile_profile, .profile_phone, .profile_email, .profile_web {
     color: white;
-    margin: 20px;
+    margin: 10px;
 }
+
+.profile_profile_p, .profile_phone_p, .profile_email_p, .profile_web_p {
+    color: grey;
+    margin: 15px;
+}
+
 
 .left_column {
     display: flex;
     flex-direction: column;
-    align-items: center;
     border: 2px solid red;
     background-color: darkslategrey;
     width: 300px;
