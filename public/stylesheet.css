@@ -31,7 +31,7 @@
     margin: 15px;
 }
 
-.profile_profile, .profile_phone, .profile_email, .profile_web {
+#profileHeader, #phoneHeader, #emailHeader, #webHeader {
     color: white;
     margin: 10px;
     border-bottom: 2px solid black;
@@ -56,12 +56,12 @@
 .right_column {
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
     background-color: #2a9df4;
-    width: 500px;
     color:white;
 }
 
-.right_column_h {
-    border-bottom: 2px solid black;
+#right_column_h {
+    border-bottom: 2px solid black; 
+    width: 350px;
 }
