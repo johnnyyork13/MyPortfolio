@@ -1,5 +1,6 @@
 .body {
     border: 2px solid red;
+    background-color: #d0efff;
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -15,7 +16,7 @@
     height: 1000px;
     display: flex;
     justify-content:space-around;
-    background-color: darkgrey;
+    background-color: #03254c;
 
 }
 .left_column, .right_column {
@@ -24,7 +25,6 @@
 }
 
 .profile_pic {
-    border: 2px solid blue;
     background-color: white;
     width: 90%;
     height: 250px;
@@ -34,31 +34,34 @@
 .profile_profile, .profile_phone, .profile_email, .profile_web {
     color: white;
     margin: 10px;
+    border-bottom: 2px solid black;
 }
 
 .profile_profile_p, .profile_phone_p, .profile_email_p, .profile_web_p {
-    color: grey;
+    color: white;
     margin: 15px;
 }
 
+.columns, .left_column, .right_column {
+    border-radius: 10px;
+}
 
 .left_column {
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
-    background-color: darkslategrey;
+    background-color: #187bcd;
     width: 300px;
 }
 
 .right_column {
-    border: 2px solid red;
-    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a9df4;
     width: 500px;
+    color:white;
 }
 
-.footer_div {
-    border: 2px solid red;
-    width: 1000px;
-    height: 100px;
-    background-color: darkslategrey;
+.right_column_h {
+    border-bottom: 2px solid black;
 }
