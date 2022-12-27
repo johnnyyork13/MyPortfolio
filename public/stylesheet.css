@@ -37,10 +37,6 @@
     border-bottom: 2px solid black;
 }
 
-.profile_profile_p, .profile_phone_p, .profile_email_p, .profile_web_p {
-    color: white;
-    margin: 15px;
-}
 
 .columns, .left_column, .right_column {
     border-radius: 10px;
@@ -64,4 +60,9 @@
 #right_column_h {
     border-bottom: 2px solid black; 
     width: 350px;
+}
+
+#educationHeader, #experienceHeader, #knowledgeHeader {
+    border-bottom: 2px solid black;
+    width: 300px;
 }
