@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sidebar {
+    background-color: white;
+    width: 150px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sideClass {
+    background-color: black;
+    width: 140px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#selfie {
+    width: 130px;
+    height: 130px;
+    background-color: blue;
+}
+
+.sidePara {
+    color: white;
+}
+
+#mainDiv {
+    background-color: white;
+    margin: 30px;
+    width: 900px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+.container {
+    width: 800px;
+    height: 600px;
+    background-color: black;
+}
+
+#aboutContainer, #experienceContainer, #projectsContainer {
+    visibility: hidden;
+    position: absolute;
+}
+
+
