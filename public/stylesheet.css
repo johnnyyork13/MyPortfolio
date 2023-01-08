@@ -31,6 +31,8 @@ body {
 
 .sidePara {
     color: white;
+    font-family: Arial;
+    font-weight: bold;
 }
 
 #mainDiv {
@@ -41,18 +43,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
 }
 
 .container {
     width: 800px;
     height: 600px;
-    background-color: black;
 }
 
 #aboutContainer, #experienceContainer, #projectsContainer {
     visibility: hidden;
     position: absolute;
+}
+
+#profileContainer {
+    background-color: black;
+}
+
+#aboutContainer {
+    background-color: red;
+}
+
+#experienceContainer {
+    background-color: blue;
+}
+
+#projectsContainer {
+    background-color: green;
 }
 
 
