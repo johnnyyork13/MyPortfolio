@@ -8,11 +8,7 @@ function addListeners()
     })
 }
 
-function showElement(para_id){
-    sideBar.forEach((p) => {
-        p.para_id.style.visibility = 'visible';
-    })
-}
+
 
 
 addListeners();
