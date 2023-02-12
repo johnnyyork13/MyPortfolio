@@ -1,74 +1,137 @@
-body {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html {
+    width: 100vw;
+    height: 100vh;
+    --bg-color: #18181b;
+    --main-color: #27272a;
+    --accent-color: #3f3f46;
+    --secondary-color: #52525b;
+    --text-color: #d4d4d8;
 }
-#sidebar {
-    background-color: white;
-    width: 150px;
-    height: 700px;
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+}
+
+.mainContainer {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr 14fr;
+    grid-template-rows: 1fr 8fr .5fr;
+    grid-template-areas: 
+    "aside header"
+    "aside main"
+    "aside footer"; 
+    color: var(--text-color);
+}
+
+aside, header {
+    background-color: var(--main-color);
+}
+
+header {
+    grid-area: header;
+}
+
+aside {
+    grid-area: aside;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-between;
 }
 
-.sideClass {
-    background-color: black;
-    width: 140px;
-    height: 50px;
+aside > h1 {
+    height: 10%;
+    font-size: 3em;
+}
+
+.linkContainer {
+    width: 100%;
+    height: 60%;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-#selfie {
-    width: 130px;
-    height: 130px;
-    background-color: blue;
-}
-
-.sidePara {
-    color: white;
-    font-family: Arial;
     font-weight: bold;
 }
 
-#mainDiv {
-    background-color: white;
-    margin: 30px;
-    width: 900px;
-    height: 700px;
+.linkContainer > ul {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.container {
-    width: 800px;
-    height: 600px;
+.linkContainer ul li:first-child p {
+    font-size: 1.5em;
 }
 
-#aboutContainer, #experienceContainer, #projectsContainer {
-    visibility: hidden;
+.linkContainer li {
+    width: 100%;
+    list-style: none;
+    margin-bottom: 15%;
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+}
+
+.linkP {
+    cursor:pointer;
+}
+
+.asideFooter {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+#main {
+    grid-area: main;
+    background-color: var(--bg-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.mainDiv {
     position: absolute;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#profileContainer {
-    background-color: black;
+.experience, .projects, .contact {
+    visibility: hidden;
 }
 
-#aboutContainer {
-    background-color: red;
+.mainDiv > h2, section {
+    width: 50%;
+    font-size: 1.5em;
 }
 
-#experienceContainer {
-    background-color: blue;
+.mainDiv > h2 {
+    margin: 5%;
 }
 
-#projectsContainer {
-    background-color: green;
+#sectionList {
+    display: flex;
+    flex-direction: column;
 }
 
+#sectionList a {
+    text-decoration: none;
+    font-size: 1.5em;
+}
 
+footer {
+    grid-area: footer;
+}

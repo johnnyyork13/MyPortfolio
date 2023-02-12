@@ -4,24 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Johnny York</title>
 </head>
 <body>
-    <div id="sidebar">
-        <div id="profile" class="sideClass">
-            <div id="selfie"></div>
-        </div>
-        <div id="about" class="sideClass"><p id="aboutPara" class="sidePara">About Me</p></div>
-        <div id="experience" class="sideClass"><p id="experiencePara" class="sidePara">Experience</p></div>
-        <div id="projects" class="sideClass"><p id="projectsPara" class="sidePara">Projects</p></div>
-    </div>
-    <div id="mainDiv">
-        <div id="profileContainer" class="container"></div>
-        <div id="aboutContainer" class="container"></div>
-        <div id="experienceContainer" class="container"></div>
-        <div id="projectsContainer" class="container"></div>
-        
+    <div class="mainContainer">
+        <header></header>
+        <aside>
+            <h1>JY</h1>
+            <nav class="linkContainer">
+                <ul>
+                    <li><p id="about" class="linkP">About Me</p></li>
+                    <li><p id="experience" class="linkP">Experience</p></li>
+                    <li><p id="projects" class="linkP">Projects</p></li>
+                    <li><p id="contact" class="linkP">Contact</p></li>
+                </ul>
+            </nav>
+            <div class="asideFooter">
+                <a href="https://www.github.com/johnnyyork13" target="_blank">GitHub</a>
+            </div>
+        </aside>
+        <main id="main">
+            <div class="about mainDiv w3-container">
+                <h2 class="w3-center w3-animate-right">About Me</h2>
+                <section class="w3-center w3-animate-right">
+                    <p>Hello! My name is Johnny and I am a self-taught 
+                        front-end web developer. I enjoy woodworking and traveling
+                        on my motorcycle when I am not building unique and responsive
+                        websites. I am extremely passionate about programming, and I 
+                        aim to exceed any and all expectations set before me. 
+                        I look forward to speaking with you!
+                    </p>
+                </section>
+            </div>
+            <div class="experience mainDiv w3-container">
+                <h2>Experience</h2>
+                <section>
+                    <div class="udemy">
+                        <h3>Udemy.com</h3>
+                        <p>Jose Portilla's Python Bootcamp</p>
+                    </div>
+                    <div class="top">
+                        <h3>The Odin Project</h3>
+                        <p>Full-stack developer curriculum.</p>
+                    </div>
+                    <div class="mercer"></div>
+                        <h3>Mercer University</h3>
+                        <p>Software Application Development and Human-Computer Interaction major (junior)</p>
+                </section>
+            </div>
+            <div class="projects mainDiv">
+                <h2>GitHub Projects</h2>
+                <section id="sectionList">
+                    <a href="https://johnnyyork13.github.io/library" target="_blank">Library App</a>
+                    <a href="https://johnnyyork13.github.io/EtchASketch" target="_blank">EtchASketch-like Drawing App</a>
+                    <a href="https://johnnyyork13.github.io/AdminDashboard" target="_blank">Admin Dashboard</a>
+                    <a href="https://johnnyyork13.github.io/Calculator" target="_blank">Calculator</a>
+                    <a href="https://johnnyyork13.github.io/SynthLandingPage" target="_blank">Synth Landing Page</a>
+                </section>
+            </div>
+            <div class="contact mainDiv">
+                <h2>Contact Me</h2>
+                <section>
+                    <h2>Email</h2>
+                    <p>johnnyyork@johnnyyork.dev</p>
+                    <h2></h2>
+                </section>
+            </div>
+        </main>
+        <footer></footer>
     </div>
 
     <script src="javascript.js"></script>
