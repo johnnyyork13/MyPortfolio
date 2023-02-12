@@ -23,6 +23,8 @@ function openSection(){
 
         //Style List
         this.parentElement.parentElement.children[i].children[0].style.fontSize = '1em';    
+        this.parentElement.parentElement.children[i].style.borderBottom = "none";
     }
     this.style.fontSize = '1.5em';
+    this.parentElement.style.borderBottom = "2px solid var(--red-border)";
 }
